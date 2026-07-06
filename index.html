@@ -23,250 +23,237 @@
     </script>
     <style>
         .hero-bg {
-            background-image: linear-gradient(rgba(15, 43, 70, 0.85), rgba(15, 43, 70, 0.85)), url('image_f95b23.jpg');
+            background-image: linear-gradient(rgba(15, 43, 70, 0.9), rgba(15, 43, 70, 0.9)), url('https://images.unsplash.com/photo-1519003722824-194d4455a60c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80');
             background-size: cover;
             background-position: center;
-        }
-        .gradient-text {
-            background: linear-gradient(to right, #0F2B46, #1e4d7a);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        @keyframes marquee {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-50%); }
-        }
-        .animate-marquee {
-            animation: marquee 20s linear infinite;
         }
     </style>
 </head>
 <body class="text-gray-900 bg-gray-50 font-sans">
 
-    <nav class="fixed w-full bg-white z-50 py-4 shadow-sm">
+    <nav class="fixed w-full bg-white z-50 py-4 shadow-sm border-b border-gray-100">
         <div class="container mx-auto px-6 flex justify-between items-center">
-            <a href="#" class="flex items-center gap-2">
+            <a href="#" class="flex items-center">
                 <img src="https://raw.githubusercontent.com/Creativetugs/primepathdispatchllc/refs/heads/main/primepathlogo.png" alt="PrimePath Logo" class="h-10 w-auto">
             </a>
             <div class="hidden md:flex gap-8 font-semibold text-navy text-sm uppercase tracking-wider">
                 <a href="#services" class="hover:text-orange transition">Services</a>
-                <a href="#process" class="hover:text-orange transition">How It Works</a>
+                <a href="#process" class="hover:text-orange transition">Process</a>
                 <a href="#calculator" class="hover:text-orange transition">Earnings</a>
             </div>
-            <a href="#calculator" class="bg-orange hover:bg-orange/90 text-white font-bold py-2.5 px-6 rounded-lg transition text-sm shadow-md">Get Started</a>
+            <a href="#assessment" class="bg-orange hover:bg-orange/90 text-white font-bold py-2.5 px-6 rounded-lg transition text-sm shadow-md">Get Started</a>
         </div>
     </nav>
 
-    <section class="hero-bg pt-32 pb-24 min-h-[85vh] flex items-center">
-        <div class="container mx-auto px-6 text-white">
-            <div class="max-w-3xl">
-                <div class="inline-flex items-center bg-orange/20 border border-orange/30 text-orange rounded-full px-4 py-1.5 mb-6 text-sm font-semibold tracking-wide backdrop-blur-sm">
-                    <span class="w-2 h-2 bg-orange rounded-full mr-2 animate-pulse"></span> Trusted by Professional Carriers
+    <section class="hero-bg pt-32 pb-24 min-h-[90vh] flex items-center">
+        <div class="container mx-auto px-6 text-white text-center md:text-left">
+            <div class="max-w-4xl mx-auto md:mx-0">
+                <h1 class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight">Spend Less Time Searching. <span class="text-orange">More Time Making Money.</span></h1>
+                <p class="text-xl text-gray-200 mb-10 leading-relaxed max-w-2xl">PrimePath handles load planning, negotiations, paperwork, and broker communication so your business never stops moving.</p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start mb-8">
+                    <a href="#assessment" class="bg-orange text-white font-bold py-4 px-8 rounded-lg text-lg hover:bg-orange/90 transition shadow-lg">Get My Free Dispatch Assessment</a>
+                    <a href="#process" class="bg-white/10 border border-white/20 text-white font-bold py-4 px-8 rounded-lg text-lg hover:bg-white hover:text-navy transition">▶ See How It Works</a>
                 </div>
-                <h1 class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight">Drive More. Earn More. <span class="text-orange">Stress Less.</span></h1>
-                <p class="text-lg md:text-xl text-gray-200 mb-10 leading-relaxed max-w-2xl">Professional Dispatch Services That Keep Your Trucks Moving. We handle the paperwork, broker negotiations, and load planning—so you can focus on the road.</p>
-                <div class="flex flex-col sm:flex-row gap-4">
-                    <a href="#calculator" class="bg-orange text-white font-bold py-4 px-8 rounded-lg text-center hover:bg-orange/90 transition text-lg shadow-lg">Get My Free Dispatch Assessment</a>
-                    <a href="#process" class="bg-white/10 border border-white/20 text-white font-bold py-4 px-8 rounded-lg text-center hover:bg-white hover:text-navy transition text-lg">▶ See How It Works</a>
+
+                <!-- Trust Badges -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm font-medium text-gray-300">
+                    <div class="flex items-center gap-2"><span class="text-orange">✓</span> Nationwide Dispatch</div>
+                    <div class="flex items-center gap-2"><span class="text-orange">✓</span> Dedicated Dispatcher</div>
+                    <div class="flex items-center gap-2"><span class="text-orange">✓</span> Fast Communication</div>
+                    <div class="flex items-center gap-2"><span class="text-orange">✓</span> Owner-Op Focused</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <div class="bg-navy text-white py-4 overflow-hidden border-b border-orange/30">
-        <div class="container mx-auto px-6 flex gap-12 text-sm font-medium whitespace-nowrap animate-marquee">
-            <span class="text-orange">Market Samples:</span>
-            <span>Dallas → Atlanta • Dry Van • $2,350</span>
-            <span>Houston → Chicago • Reefer • $2,900</span>
-            <span>Memphis → Nashville • Flatbed • $1,650</span>
-            <span>Denver → Phoenix • Power Only • $1,900</span>
-            <span>Chicago → Seattle • Reefer • $3,200</span>
+    <section class="py-12 bg-white border-b border-gray-200">
+        <div class="container mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div><div class="text-4xl font-bold text-navy mb-1">500+</div><div class="text-gray-500 text-sm font-semibold uppercase tracking-wider">Loads Planned</div></div>
+            <div><div class="text-4xl font-bold text-navy mb-1">95%</div><div class="text-gray-500 text-sm font-semibold uppercase tracking-wider">Reload Rate</div></div>
+            <div><div class="text-4xl font-bold text-navy mb-1">24/7</div><div class="text-gray-500 text-sm font-semibold uppercase tracking-wider">Support</div></div>
+            <div><div class="text-4xl font-bold text-navy mb-1">100%</div><div class="text-gray-500 text-sm font-semibold uppercase tracking-wider">Transparent</div></div>
         </div>
-    </div>
+    </section>
 
-    <section id="calculator" class="py-20 bg-white">
+    <section id="calculator" class="py-20 bg-gray-50">
         <div class="container mx-auto px-6 max-w-5xl">
             <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-navy mb-4">See How Much More You Could Earn</h2>
-                <p class="text-gray-600">Get a clear picture of your potential weekly revenue with our expert dispatch support.</p>
+                <h2 class="text-4xl font-bold text-navy mb-4">See Your Potential Weekly Growth</h2>
+                <p class="text-gray-600">Use the calculator below to see what your revenue could look like with expert dispatch.</p>
             </div>
-            <div class="grid md:grid-cols-2 gap-12 bg-gray-50 p-8 md:p-12 rounded-3xl border border-gray-100 shadow-xl">
-                <div>
-                    <div class="mb-6">
-                        <label class="block font-bold text-navy mb-2">How many trucks do you operate?</label>
+            <div class="grid md:grid-cols-2 gap-12 bg-white p-8 md:p-12 rounded-3xl border border-gray-100 shadow-xl">
+                <div class="space-y-8">
+                    <div>
+                        <label class="block font-bold text-navy mb-4">How many trucks do you operate?</label>
                         <div class="flex gap-4">
-                            <label class="flex items-center"><input type="radio" name="trucks" value="1" checked class="mr-2"> 1</label>
-                            <label class="flex items-center"><input type="radio" name="trucks" value="3" class="mr-2"> 2-5</label>
-                            <label class="flex items-center"><input type="radio" name="trucks" value="6" class="mr-2"> 6+</label>
+                            <label class="cursor-pointer bg-gray-50 px-6 py-3 rounded-lg border-2 border-transparent hover:border-orange transition flex-1 text-center font-bold">1</label>
+                            <label class="cursor-pointer bg-gray-50 px-6 py-3 rounded-lg border-2 border-transparent hover:border-orange transition flex-1 text-center font-bold">2-5</label>
+                            <label class="cursor-pointer bg-gray-50 px-6 py-3 rounded-lg border-2 border-transparent hover:border-orange transition flex-1 text-center font-bold">6+</label>
                         </div>
                     </div>
-                    <div class="mb-6">
-                        <label class="block font-bold text-navy mb-2">Weekly Miles</label>
+                    <div>
+                        <label class="block font-bold text-navy mb-4">Weekly Miles</label>
                         <input type="range" id="miles" min="1500" max="3500" value="2500" class="w-full h-2 bg-orange rounded-lg appearance-none cursor-pointer">
                         <div class="flex justify-between text-xs text-gray-500 mt-2"><span>1500</span><span>2500</span><span>3500</span></div>
                     </div>
                 </div>
-                <div class="bg-navy text-white p-8 rounded-2xl flex flex-col justify-center text-center">
-                    <p class="text-gray-400 uppercase tracking-widest text-sm mb-2">Potential Weekly Gain</p>
-                    <h3 class="text-5xl font-extrabold text-orange mb-4" id="gain-display">+$1,150</h3>
-                    <p class="text-sm text-gray-400">*Estimated based on efficient dispatch planning and stronger rate negotiation.</p>
-                    <button class="mt-8 bg-orange text-white font-bold py-3 px-6 rounded-lg hover:bg-orange/90 transition">Get My Custom Dispatch Plan</button>
+                <div class="bg-navy text-white p-8 rounded-2xl flex flex-col justify-center">
+                    <h3 class="text-2xl font-bold mb-6 border-b border-white/20 pb-4">Revenue Projection</h3>
+                    <div class="flex justify-between mb-4"><span>Current Revenue:</span> <span id="current-rev">$7,200</span></div>
+                    <div class="flex justify-between mb-4 font-bold text-orange text-xl"><span>With PrimePath:</span> <span id="optimized-rev">$8,350</span></div>
+                    <div class="bg-white/10 p-4 rounded-lg mt-4 text-center">
+                        <p class="text-sm text-gray-400">Potential Weekly Gain</p>
+                        <h3 class="text-4xl font-extrabold text-orange" id="gain-display">+$1,150</h3>
+                    </div>
+                    <p class="text-xs text-gray-500 mt-6 text-center">*Results vary depending on equipment, lanes, and market conditions.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="services" class="py-20 bg-gray-50">
+    <section id="services" class="py-20">
         <div class="container mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-navy mb-4">Our Dispatch Services</h2>
-                <p class="text-gray-600 max-w-2xl mx-auto">We provide comprehensive support tailored to owner-operators and small fleets.</p>
-            </div>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Service 1: Load Planning -->
-                <div class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100">
-                    <div class="h-48 bg-navy flex items-center justify-center overflow-hidden">
-                        <img src="https://raw.githubusercontent.com/Creativetugs/primepathdispatchllc/refs/heads/main/truckingbook.webp" alt="Load Planning" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition duration-500 group-hover:scale-105">
-                    </div>
-                    <div class="p-6">
-                        <h3 class="font-bold text-xl mb-2 text-navy">Load Planning</h3>
-                        <p class="text-gray-600 text-sm">We identify profitable freight opportunities that match your specific equipment and schedule needs.</p>
-                    </div>
-                </div>
-                <!-- Service 2: Rate Negotiation -->
-                <div class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100">
-                    <div class="h-48 bg-navy flex items-center justify-center overflow-hidden">
-                        <img src="https://raw.githubusercontent.com/Creativetugs/primepathdispatchllc/refs/heads/main/Rate%20Negotiation.webp" alt="Rate Negotiation" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition duration-500 group-hover:scale-105">
-                    </div>
-                    <div class="p-6">
-                        <h3 class="font-bold text-xl mb-2 text-navy">Rate Negotiation</h3>
-                        <p class="text-gray-600 text-sm">Our team negotiates directly with brokers to secure competitive rates that maximize your revenue.</p>
-                    </div>
-                </div>
-                <!-- Service 3: Fleet Management -->
-                <div class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100">
-                    <div class="h-48 bg-navy flex items-center justify-center overflow-hidden">
-                        <img src="https://raw.githubusercontent.com/Creativetugs/primepathdispatchllc/refs/heads/main/fleet%20management.webp" alt="Fleet Management" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition duration-500 group-hover:scale-105">
-                    </div>
-                    <div class="p-6">
-                        <h3 class="font-bold text-xl mb-2 text-navy">Fleet Management</h3>
-                        <p class="text-gray-600 text-sm">Whether you run one truck or a small fleet, we provide scalable dispatch solutions to keep you growing.</p>
-                    </div>
-                </div>
-                <!-- Service 4: Broker Setup -->
-                <div class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100">
-                    <div class="h-48 bg-navy flex items-center justify-center overflow-hidden">
-                        <img src="https://placehold.co/600x400/0F2B46/ffffff?text=Broker+Setup" alt="Broker Setup" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition duration-500 group-hover:scale-105">
-                    </div>
-                    <div class="p-6">
-                        <h3 class="font-bold text-xl mb-2 text-navy">Broker Setup</h3>
-                        <p class="text-gray-600 text-sm">We handle all carrier packets and broker setups, ensuring you're ready to haul for top-tier freight partners.</p>
-                    </div>
-                </div>
-                <!-- Service 5: Paperwork -->
-                <div class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100">
-                    <div class="h-48 bg-navy flex items-center justify-center overflow-hidden">
-                        <img src="https://raw.githubusercontent.com/Creativetugs/primepathdispatchllc/refs/heads/main/truckingpaperwork.webp" alt="Paperwork" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition duration-500 group-hover:scale-105">
-                    </div>
-                    <div class="p-6">
-                        <h3 class="font-bold text-xl mb-2 text-navy">Paperwork Management</h3>
-                        <p class="text-gray-600 text-sm">From rate confirmations to invoices, we handle the administrative tasks so you stay focused on the road.</p>
-                    </div>
-                </div>
-                <!-- Service 6: 24/7 Support -->
-                <div class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100">
-                    <div class="h-48 bg-navy flex items-center justify-center overflow-hidden">
-                        <img src="https://raw.githubusercontent.com/Creativetugs/primepathdispatchllc/refs/heads/main/24-7%20dispatch.webp" alt="24/7 Support" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition duration-500 group-hover:scale-105">
-                    </div>
-                    <div class="p-6">
-                        <h3 class="font-bold text-xl mb-2 text-navy">24/7 Dispatch Support</h3>
-                        <p class="text-gray-600 text-sm">Need a route change or have a question? We’re available when you need us most.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="py-20 bg-gray-50">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center text-navy mb-16">Why Drivers Choose PrimePath</h2>
+            <h2 class="text-4xl font-bold text-navy text-center mb-16">Complete Dispatch Solutions</h2>
             <div class="grid md:grid-cols-3 gap-8">
-                <!-- Feature 1: Higher Paying Loads -->
-                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition border border-gray-100">
-                    <div class="w-12 h-12 mb-4 text-orange">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 6l-9.5 9.5-5-5L1 18"/><path d="M17 6h6v6"/></svg>
+                <div class="md:col-span-2 group bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100">
+                    <img src="https://raw.githubusercontent.com/Creativetugs/primepathdispatchllc/refs/heads/main/truckingbook.webp" class="w-full h-64 object-cover">
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold text-navy mb-4">Dedicated Dispatch Management</h3>
+                        <p class="text-gray-600 mb-6">Everything you need to keep your trucks moving. We handle the load booking, route planning, broker communication, and paperwork, while you focus on the road.</p>
+                        <div class="grid grid-cols-2 gap-4 text-sm">
+                            <span class="flex items-center gap-2">✓ Load Booking</span>
+                            <span class="flex items-center gap-2">✓ Rate Negotiation</span>
+                            <span class="flex items-center gap-2">✓ Broker Communication</span>
+                            <span class="flex items-center gap-2">✓ Paperwork/Invoicing</span>
+                        </div>
                     </div>
-                    <h3 class="font-bold text-xl mb-2 text-navy">Higher Paying Loads</h3>
-                    <p class="text-gray-600">We search multiple freight sources to keep your truck moving with profitable freight.</p>
                 </div>
-                <!-- Feature 2: Stronger Rate Negotiation -->
-                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition border border-gray-100">
-                    <div class="w-12 h-12 mb-4 text-orange">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                <div class="space-y-6">
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                        <img src="https://raw.githubusercontent.com/Creativetugs/primepathdispatchllc/refs/heads/main/fleet%20management.webp" class="w-full h-32 object-cover rounded-lg mb-4">
+                        <h4 class="font-bold text-navy">Fleet Coordination</h4>
                     </div>
-                    <h3 class="font-bold text-xl mb-2 text-navy">Stronger Negotiation</h3>
-                    <p class="text-gray-600">We negotiate directly with brokers so you don't leave money on the table.</p>
-                </div>
-                <!-- Feature 3: Less Deadhead -->
-                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition border border-gray-100">
-                    <div class="w-12 h-12 mb-4 text-orange">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                        <img src="https://raw.githubusercontent.com/Creativetugs/primepathdispatchllc/refs/heads/main/24-7%20dispatch.webp" class="w-full h-32 object-cover rounded-lg mb-4">
+                        <h4 class="font-bold text-navy">24/7 Support</h4>
                     </div>
-                    <h3 class="font-bold text-xl mb-2 text-navy">Less Deadhead</h3>
-                    <p class="text-gray-600">Smarter route planning means more loaded miles and fewer wasted miles.</p>
-                </div>
-                <!-- Feature 4: Broker Communication -->
-                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition border border-gray-100">
-                    <div class="w-12 h-12 mb-4 text-orange">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                    </div>
-                    <h3 class="font-bold text-xl mb-2 text-navy">Broker Communication</h3>
-                    <p class="text-gray-600">No more waiting on hold. We handle the calls, emails, and paperwork.</p>
-                </div>
-                <!-- Feature 5: Back Office Support -->
-                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition border border-gray-100">
-                    <div class="w-12 h-12 mb-4 text-orange">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
-                    </div>
-                    <h3 class="font-bold text-xl mb-2 text-navy">Back Office Support</h3>
-                    <p class="text-gray-600">Rate confirmations, carrier packets, invoices, and documentation handled for you.</p>
-                </div>
-                <!-- Feature 6: Dedicated Dispatcher -->
-                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition border border-gray-100">
-                    <div class="w-12 h-12 mb-4 text-orange">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-                    </div>
-                    <h3 class="font-bold text-xl mb-2 text-navy">Dedicated Dispatcher</h3>
-                    <p class="text-gray-600">You'll work with someone who knows your business—not a different person every day.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="py-20 bg-navy text-white text-center">
+    <section id="process" class="py-20 bg-navy text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold mb-16">How It Works</h2>
+            <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+                <div class="flex flex-col items-center">
+                    <div class="w-16 h-16 rounded-full bg-orange flex items-center justify-center font-bold text-2xl mb-4">1</div>
+                    <p class="font-bold">Tell us about<br>your truck</p>
+                </div>
+                <div class="hidden md:block h-px w-24 bg-white/20"></div>
+                <div class="flex flex-col items-center">
+                    <div class="w-16 h-16 rounded-full bg-orange flex items-center justify-center font-bold text-2xl mb-4">2</div>
+                    <p class="font-bold">We find profitable<br>freight</p>
+                </div>
+                <div class="hidden md:block h-px w-24 bg-white/20"></div>
+                <div class="flex flex-col items-center">
+                    <div class="w-16 h-16 rounded-full bg-orange flex items-center justify-center font-bold text-2xl mb-4">3</div>
+                    <p class="font-bold">You approve<br>the load</p>
+                </div>
+                <div class="hidden md:block h-px w-24 bg-white/20"></div>
+                <div class="flex flex-col items-center">
+                    <div class="w-16 h-16 rounded-full bg-orange flex items-center justify-center font-bold text-2xl mb-4">4</div>
+                    <p class="font-bold">Drive &<br>Deliver</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20">
         <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-bold mb-6">Ready to Stop Chasing Loads?</h2>
-            <p class="text-xl text-gray-300 mb-10 max-w-2xl mx-auto">Let's build a dispatch strategy that keeps your truck moving and your business growing.</p>
-            <div class="flex flex-col items-center gap-4">
-                <a href="tel:5042385619" class="bg-orange text-white font-bold py-4 px-10 rounded-lg text-lg hover:bg-orange/90 transition shadow-lg">Call: (504) 238-5619</a>
-                <p class="text-gray-400">info@primepathdispatchllc.com</p>
+            <h2 class="text-4xl font-bold text-navy text-center mb-16">Why Carriers Trust PrimePath</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+                    <div class="text-orange mb-4 text-xl">★★★★★</div>
+                    <p class="text-gray-600 mb-6 italic">"PrimePath completely changed how I run my business. I focus on driving while they handle everything else."</p>
+                    <p class="font-bold text-navy">Michael R.</p>
+                    <p class="text-sm text-gray-500">Owner Operator</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+                    <div class="text-orange mb-4 text-xl">★★★★★</div>
+                    <p class="text-gray-600 mb-6 italic">"Communication is excellent and rate negotiation has consistently helped increase my weekly revenue."</p>
+                    <p class="font-bold text-navy">James L.</p>
+                    <p class="text-sm text-gray-500">Small Fleet Owner</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+                    <div class="text-orange mb-4 text-xl">★★★★★</div>
+                    <p class="text-gray-600 mb-6 italic">"Professional, responsive and reliable. Exactly what every owner-operator needs."</p>
+                    <p class="font-bold text-navy">David M.</p>
+                    <p class="text-sm text-gray-500">Owner Operator</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <footer class="py-8 bg-gray-100 text-center text-gray-500 text-sm border-t">
-        <p>&copy; 2026 PrimePath Dispatch LLC. All Rights Reserved.</p>
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6 max-w-3xl">
+            <h2 class="text-4xl font-bold text-navy text-center mb-16">Frequently Asked Questions</h2>
+            <div class="space-y-6">
+                <details class="group bg-gray-50 p-6 rounded-xl">
+                    <summary class="font-bold text-navy cursor-pointer">How much does dispatch cost?</summary>
+                    <p class="text-gray-600 mt-4">We offer competitive pricing structures. Contact us for a custom plan tailored to your fleet size.</p>
+                </details>
+                <details class="group bg-gray-50 p-6 rounded-xl">
+                    <summary class="font-bold text-navy cursor-pointer">Do you work with new owner-operators?</summary>
+                    <p class="text-gray-600 mt-4">Absolutely. We help both new and experienced carriers build profitable routes.</p>
+                </details>
+                <details class="group bg-gray-50 p-6 rounded-xl">
+                    <summary class="font-bold text-navy cursor-pointer">Do I choose my own loads?</summary>
+                    <p class="text-gray-600 mt-4">Yes. We present opportunities, explain the details, and you make the final decision.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <section id="assessment" class="py-20 bg-orange text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold mb-8">Is Your Truck Ready to Earn More?</h2>
+            <p class="text-xl mb-8 opacity-90">Answer 5 quick questions and receive a personalized dispatch strategy and a free 15-minute consultation.</p>
+            <a href="#" class="bg-navy text-white font-bold py-4 px-10 rounded-lg text-lg hover:bg-navy/90 transition shadow-lg inline-block">Start My Free Assessment</a>
+        </div>
+    </section>
+
+    <footer class="py-12 bg-navy text-white text-center">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-6">Ready to Maximize Every Mile?</h2>
+            <p class="text-gray-400 mb-8 max-w-2xl mx-auto">Whether you're running one truck or building a fleet, PrimePath Dispatch is ready to help you book better freight, negotiate stronger rates, and keep your business moving.</p>
+            <div class="flex flex-col items-center gap-4 text-orange font-bold text-xl mb-8">
+                <a href="tel:5042385619" class="hover:underline">Call: (504) 238-5619</a>
+                <p>info@primepathdispatchllc.com</p>
+            </div>
+            <p class="text-gray-500 text-sm">&copy; 2026 PrimePath Dispatch LLC. All Rights Reserved.</p>
+        </div>
     </footer>
 
     <script>
         const milesInput = document.getElementById('miles');
+        const currentRev = document.getElementById('current-rev');
+        const optimizedRev = document.getElementById('optimized-rev');
         const gainDisplay = document.getElementById('gain-display');
 
         milesInput.addEventListener('input', () => {
-            const miles = milesInput.value;
-            // Simplified revenue gain logic
-            const potentialGain = Math.floor((miles / 1500) * 800);
-            gainDisplay.textContent = `+$${potentialGain.toLocaleString()}`;
+            const miles = parseInt(milesInput.value);
+            const baseRev = 7200;
+            // Simple logic for illustration
+            const multiplier = (miles / 2500);
+            const current = Math.floor(baseRev * multiplier);
+            const potential = Math.floor(current * 1.16); // 16% increase
+            const gain = potential - current;
+            
+            currentRev.textContent = `$${current.toLocaleString()}`;
+            optimizedRev.textContent = `$${potential.toLocaleString()}`;
+            gainDisplay.textContent = `+$${gain.toLocaleString()}`;
         });
     </script>
 </body>
